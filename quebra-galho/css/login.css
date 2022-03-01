@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+/*RESET CSS DA PÁGINA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*FORMATAÇÃO CONTAINER*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+.content {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 980px;
+    height: 600px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/*FORMATAÇÃO DO LOGIN*/
+.login {
+    display: flex;
+}
+.login .first-column {
+    text-align: center;
+    width: 40%;
+    height: 600px;
+    background-color: #64232c;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.login .second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*FORMATAÇÃO DO CADASTRO*/
+.cadastro {
+    display: flex;
+}
+.cadastro .second-column {
+    text-align: center;
+    width: 40%;
+    height: 600px;
+    background-color: #64232c;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.cadastro .first-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*FORMATAÇÃO FONTES*/
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.title {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-logo {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color:#fff;
+}
+.title-primary {
+    color: #fff;
+}
+.title-second {
+    color: #64232c;
+}
+.description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary {
+    color: #fff;
+}
+.description-second {
+    color: #64232c;
+    margin: 15px 5px;
+}
+.password {
+    color: #b38c8e;
+    font-size: 18px;
+    margin: 15px 0;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.password::first-letter {
+    text-transform: capitalize;
+}
+.password:hover {
+    color: #64232c;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+/*FORMATAÇÃO LOGO*/
+.logo {
+    color: #fff;
+}
+.header-logo {
+    position: relative;
+    margin-top: 100px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.header-logo a{
+    text-decoration: none;
+}
+
+/*FORMATAÇÃO DOS BOTÕES*/
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .5s;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color: #692730;
+}
+.btn-second {
+    background-color: #692730;
+    border: 1px solid #692730;
+    transition: background-color .5s;
+}
+.btn-second:hover {
+    background-color: #fff;
+    border: 1px solid #692730;
+    color: #692730;
+}
+
+/*FORMATAÇÃO DO FORMULÁRIO*/
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.label-input {
+    width: 100%;
+    background-color: #fff3f4;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    font-size: 15px;
+    color: #64232c;
+    position: relative;
+    height: 50px;
+}
+.genero {
+    display: flex;
+    font-size: 15px;
+    color: #515151;
+    align-items: center;
+    padding-left: 10px;
+}
+.genero label {
+    padding-left: 5px;
+    padding-right: 15px;
+    cursor: pointer;    
+}
+.radio {
+    cursor: pointer;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #8b5054;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+  }
+.radio:before {
+    content: '';
+    width: 110%;
+    height: 110%;
+    background: #8b5054;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    position: absolute;
+}  
+.radio:checked:before{
+    opacity: 1;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    border: none;
+    outline: none;
+    color: #64232c;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #fff3f4;
+    outline: none;
+}
+.labelInput{
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    pointer-events: none;
+    transition: .5s;
+    font-size: 15px;
+    color: #515151;
+    font-weight: 400;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: 2px;
+    font-size: 10px;
+    color: #8b5054;
+    font-weight: 600;
+}
+.icon-modify {
+    color: #8b5054;
+    padding: 0 5px;
+}
+.tel {
+    transform: rotateY(180deg);
+}

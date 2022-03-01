@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+.content {
+    display: flex;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 1200px;
+    height: 600px;
+    align-items: center;
+    position: relative;
+}
+
+.first-column {
+    display: flex;
+    width: 35%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #64232c;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.second-column {
+    display: flex;
+    width: 65%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+}
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #64232c;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: 1px solid #fff;
+    margin-top: 1rem;
+    transition: background-color .5s;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,0.1);
+}
+
+/*FORMATAÇÃO DA TABELA*/
+.table {
+    width: 700px;
+    border-collapse: collapse;
+}
+
+.col {
+    text-align: center;
+}
+.col1, .col5 {
+    width: 80px;
+}
+.col2 {
+    width: 240px;
+}
+.col3, .col4 {
+    width: 150px;
+}
+
+
+.table thead tr {
+    background-color: #64232c;
+    color: #fff;
+    height: 50px;
+    padding-right: 6px;
+    border-bottom: 2px solid #fff;
+}
+.table tbody tr {
+    color: #64232c;
+    padding-top: 10px;
+    background-color: #fff3f4;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transition: background-color .3s;
+    height: 40px;
+}
+.table tbody {
+    display: block;
+    overflow-y: auto;
+    height: 300px;
+}
+.table tr {
+    display: block;
+}
+
+tbody tr:hover {
+    background-color: #8b5054;
+    color: #fff3f4;
+    font-weight: bold;
+}
+
+/*BARRA DE ROLAGEM*/
+.table tbody::-webkit-scrollbar-track {
+    background-color: rgba(255, 243, 244, 0.5);
+}
+.table tbody::-webkit-scrollbar {
+    width: 6px;
+    background: rgba(139, 80, 84, 0.4);
+}
+.table tbody::-webkit-scrollbar-thumb {
+    background: rgba(139, 80, 84, 0.);
+}
